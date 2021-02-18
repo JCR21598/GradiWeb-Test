@@ -5,33 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="/src/main.css">
 
     <title>HI</title>
 </head>
-<body>
-    <header class="header-image">
-        <img src="Assets/HeaderImage.jpg" alt="Structure">
- 
+<body class="grid-wrapper">
+
+    <header class="header-grid-container">
+
+        <p class="header-image"></p>
+
+        <div class="header-block">
+            <img class="location-icon" src="assets/My location icon.png">
+            <h2 class="h2-header-location">Bogotá</h2>
+    
+        </div>
+        
+        
             <!--Set the location with icon-->
             <!-- Below it the outline map -->
 
     </header>
-    <body>
+
+    <body class="body-grid-container">
+
         <!-- Has three main sections -->
-        <div class="bogota-forecast">
+        
+        <div class="bogota-forecast-section">
+            <h1 class="bogota-forecast-header">3 Day Forecast</h1>
+            
+        </div>
+        
+        <div class="place-to-visit-section">
 
         </div>
-        <div class="place-to-visit">
-
-        </div>
-        <div class="other-forecast">
+        
+        <div class="other-forecast-section">
 
         </div>
     </body>
-    <footer>
 
-    </footer>
     <script src="scripts.js"></script>
 </body>
 </html>
