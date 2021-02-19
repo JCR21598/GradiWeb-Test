@@ -1,0 +1,7 @@
+To run Heroku: 
+
+Make sure your logged in Heroku: Heroku login
+
+git add .
+git commit -m "xxx"
+git subtree push --prefix src heroku master
