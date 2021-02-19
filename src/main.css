@@ -61,7 +61,10 @@ input:focus, textarea:focus, select:focus, input:after{
 }
 
 
+
 /*** Header Container Styling ***/
+
+/* Large image with text box and images */
 
 .header-grid-container{
     height: 40vh;
@@ -76,6 +79,7 @@ input:focus, textarea:focus, select:focus, input:after{
     /* Image settings*/
     background: url('assets/structures.jpg');
     background-position: center;
+    background-size: 120%;
 
     padding: 0 0.25rem;
     height: 40vh;
@@ -109,6 +113,40 @@ input:focus, textarea:focus, select:focus, input:after{
     height: 8rem;
     width: 8rem;
 }
+
+
+/* SideBar Bogota's current weather */
+
+.current-bogota-weather{
+    position: fixed;
+    left:0;
+    top: 15vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.bogota-today{
+    font-size: 2.8rem;
+    padding: 35px;
+    border-radius: 0 25px 25px 0;
+}
+
+.current-bogota-icon{
+    background-color: #323383;
+    padding:0;
+
+}
+
+.current-bogota-temp{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background-color: #7D68E9;
+
+}
+
+
+
 
 
 /*** Main Container Styling ***/
@@ -162,7 +200,7 @@ b {
 
 .container{
     height:28%;
-    width: 75%;
+    width: 70%;
     border-radius: 35px;
     background-color: #ffffff;
     border: 5px solid #eeeeee;
@@ -309,13 +347,42 @@ b {
 
 .place3{
     grid-area: place3;
+    
 }
 
 .img-place3{
-    object-fit: cover;
+    background: url('assets/greece.jpg');
+    background-size: 120%;
+
     width: 90%;
     height: 90%;
     border-radius: 50px;
+
+    position:relative;
+}
+
+.btn-visit-places{
+
+    outline:none;
+    border: 5px solid #786AE4;
+    background-color: #786AE4;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #ffffff;
+    opacity: 95%;
+    border-radius: 45px;
+
+    position: absolute;
+    right:0;
+    height: 100%;
+    width: 25%
+}
+
+
+.btn-visit-places:hover{
+    color: #786AE4;
+    background-color: #EFEEFC;
+    border: 5px solid #EFEEFC;
 }
 
 
@@ -326,6 +393,47 @@ b {
     height:100%;
     width:100%;
 
+    position: relative;
+
     grid-area: OtherForecast; 
+
+}
+
+.add-location-section{
+    background-color: #ffffff;
+    border: 5px dashed #eeeeee;
+    text-align: center;
+
+    padding-top: 30px;
+
+    position: absolute;
+    bottom: 0;
+}
+
+.btn-add-location{
+    color: #786AE4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    outline:none;
+    border: 5px solid #EFEEFC;
+    border-radius: 25px;
+
+    padding: 15px 50px;
+    background-color: #EFEEFC;    
+}
+
+.btn-add-location:hover{
+    border-color: #786AE4;
+    background-color: #786AE4;
+
+    color:#EFEEFC;
+}
+
+.city-outline{
+    width:90%;
+    height:auto;
+    padding: 20px
 
 }
