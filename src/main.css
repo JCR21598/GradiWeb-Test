@@ -2,7 +2,7 @@
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
-    padding-top: 3rem;
+    padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
@@ -50,28 +50,28 @@ input:focus, textarea:focus, select:focus, input:after{
 /* Entire body Grid wrapper */
 .grid-wrapper{
 
-    background-color: #ffffff;
-
+    background-color: #f9f9f9;
     display: grid;
     grid-template-areas: "  .    Header   .   "
                          "  .     Main    .   ";
 
-    grid-gap: 50px 10px;
+    grid-gap: 75px 10px;
     grid-template-columns: 0.15fr 5fr 0.15fr;
     grid-template-rows: auto;
 }
 
 
-/* Header Container Styling */
+/*** Header Container Styling ***/
 
 .header-grid-container{
-    grid-area: Header;
-
+    height: 40vh;
+    padding-top: 10rem;
     position: relative;
 
+    grid-area: Header;
+    
+
 }
-
-
 
 .header-image{
 
@@ -80,9 +80,9 @@ input:focus, textarea:focus, select:focus, input:after{
     background-position: center;
 
     padding: 0 0.25rem;
-    height: 45vh;
+    height: 40vh;
     border-radius: 150px;
-    box-shadow: 50px 50px #fdfdfd;
+    box-shadow: 50px 50px #f3f3f3;
 
 }
 
@@ -90,7 +90,7 @@ input:focus, textarea:focus, select:focus, input:after{
     /* Position in Image-Header*/
     position: absolute;
     left: 10%; 
-    top: 30%;
+    top: 40%;
 
     display: flex;
 }
@@ -108,30 +108,220 @@ input:focus, textarea:focus, select:focus, input:after{
     font-size: 5rem;
 }
 
-
-/* Main Container Styling */
-
-.body-grid-container{
-    grid-area: Main;
+.bogota-icon{
+    height: 15rem;
+    width: 17rem;
 }
 
+
+/*** Main Container Styling ***/
+
+.main-grid-container{
+    height:45vh;
+
+    grid-area: Main;
+
+    display: grid;
+    grid-template-areas: "BogotaForecast   PlaceToVisit   OtherForecast";
+
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1.25fr 1fr;
+    grid-template-rows: auto;
+
+}
+
+
+/* Bogota Forecast Section/Styling */
 
 .bogota-forecast-section{
+    grid-area: BogotaForecast; 
+    height:100%;
+    width:100%;
+
+    display: grid;
+    grid-template-areas: "bogotaForecastTitle"
+                         "bogotaForecastContainer";
+    
+    grid-template-rows: 10% 90%; 
+}
+
+.bogota-section-header{
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+b {
+    font-weight: bold;
+}
+
+/* Bogota Cards */
+
+.bogota-forecast-cards{
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container{
+    height:25%;
+    width: 80%;
+    border-radius: 75px;
+    background-color: #ffffff;
+    border: 5px solid #eeeeee;
+
+    display: grid;
+
+    grid-template-areas: "bogotaWeatherIcon       bogotaDay       bogotaTemps"
+                         "bogotaWeatherIcon   bogotaWeatherInfo   bogotaTemps";
+    
+    grid-template-columns: 20% 50% 30%; 
+}
+
+.forecast-day1{
+    
+    order: 1;
+}
+
+.forecast-day2{
+
+    order: 2;
+}
+
+.forecast-day3{
+
+    order:3;
+}
+
+/* Bogota Cards Content */
+
+.bogota-weather-icon{
+
+    border-radius: 75px 0 0 75px;
+
+    grid-area: bogotaWeatherIcon;
+}
+
+.bogota-day{
+
+    grid-area: bogotaDay;
 
 }
 
+.bogota-weather-info{
+    
+    grid-area: bogotaWeatherInfo ;
+
+}
+
+.bogota-temps{
+    background-color: #786AE4;
+    border-radius: 75px;
+
+    grid-area: bogotaTemps;
+}
+
+
+
+
+/* Place to Visit Section/Styling */
+
+.imgs-places{
+    position:relative
+}
+
+.place-block{
+    position: absolute;
+
+    color: white;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+    padding-top: 75px;
+    padding-left: 75px;
+    
+    display: flex;
+    align-items: center;
+}
 
 .place-to-visit-section{
 
+    min-width: 0;
+    min-height: 0;
+
+    height:100%;
+    width:100%;
+
+    overflow: hidden;
+
+
+    grid-area: PlaceToVisit; 
+
+    display: grid;
+    grid-template-areas: "sectionTitle   sectionTitle"
+                         "   place1          place2"
+                         "   place1          place3";
+
+    
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 45% 45%;    
+
+
 
 }
 
+.place-section-header{
+
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+    grid-area: sectionTitle;
+}
+
+.place1{
+    grid-area: place1;
+}
+
+.img-place1{
+    object-fit: cover;
+    width: 95%;
+    height: 95%;
+    border-radius: 150px;
+}
+
+
+.place2{
+    grid-area: place2;
+}
+
+.img-place2{
+    object-fit: cover;
+    width: 90%;
+    height: 90%;
+    border-radius: 150px;
+}
+
+
+.place3{
+    grid-area: place3;
+}
+
+.img-place3{
+    object-fit: cover;
+    width: 90%;
+    height: 90%;
+    border-radius: 150px;
+}
+
+
+/* Other Forecast Section/Styling */
 
 .other-forecast-section{
 
+    height:100%;
+    width:100%;
+
+    grid-area: OtherForecast; 
+
 }
-
-
-
-
-/* Footer Container Styling */
