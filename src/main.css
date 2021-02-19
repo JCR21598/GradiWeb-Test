@@ -65,12 +65,10 @@ input:focus, textarea:focus, select:focus, input:after{
 
 .header-grid-container{
     height: 40vh;
-    padding-top: 10rem;
+    padding-top: 6rem;
     position: relative;
 
     grid-area: Header;
-    
-
 }
 
 .header-image{
@@ -81,8 +79,7 @@ input:focus, textarea:focus, select:focus, input:after{
 
     padding: 0 0.25rem;
     height: 40vh;
-    border-radius: 150px;
-    box-shadow: 50px 50px #f3f3f3;
+    border-radius: 50px;
 
 }
 
@@ -95,8 +92,8 @@ input:focus, textarea:focus, select:focus, input:after{
     display: flex;
 }
 
-.location-icon{
-    height: 4rem;
+.location-icon-purple{
+    height: 2.5rem;
     padding-right: 40px;
 }
 
@@ -105,12 +102,12 @@ input:focus, textarea:focus, select:focus, input:after{
     color: #786AE4;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 .bogota-icon{
-    height: 15rem;
-    width: 17rem;
+    height: 8rem;
+    width: 8rem;
 }
 
 
@@ -146,7 +143,7 @@ input:focus, textarea:focus, select:focus, input:after{
 }
 
 .bogota-section-header{
-    font-size: 5rem;
+    font-size: 2.8rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -164,9 +161,9 @@ b {
 }
 
 .container{
-    height:25%;
-    width: 80%;
-    border-radius: 75px;
+    height:28%;
+    width: 75%;
+    border-radius: 35px;
     background-color: #ffffff;
     border: 5px solid #eeeeee;
 
@@ -175,7 +172,7 @@ b {
     grid-template-areas: "bogotaWeatherIcon       bogotaDay       bogotaTemps"
                          "bogotaWeatherIcon   bogotaWeatherInfo   bogotaTemps";
     
-    grid-template-columns: 20% 50% 30%; 
+    grid-template-columns: 20% 40% 40%; 
 }
 
 .forecast-day1{
@@ -216,7 +213,8 @@ b {
 
 .bogota-temps{
     background-color: #786AE4;
-    border-radius: 75px;
+    border: 5px solid #786AE4;
+    border-radius: 30px;
 
     grid-area: bogotaTemps;
 }
@@ -225,25 +223,6 @@ b {
 
 
 /* Place to Visit Section/Styling */
-
-.imgs-places{
-    position:relative
-}
-
-.place-block{
-    position: absolute;
-
-    color: white;
-    font-size: 3rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-
-    padding-top: 75px;
-    padding-left: 75px;
-    
-    display: flex;
-    align-items: center;
-}
 
 .place-to-visit-section{
 
@@ -265,7 +244,7 @@ b {
 
     
     grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 45% 45%;    
+    grid-template-rows: 10% 30% 60%;    
 
 
 
@@ -273,10 +252,35 @@ b {
 
 .place-section-header{
 
-    font-size: 5rem;
+    font-size: 2.8rem;
     font-family: Arial, Helvetica, sans-serif;
 
     grid-area: sectionTitle;
+    
+}
+
+.imgs-places{
+    position:relative
+}
+
+.place-block{
+    position: absolute;
+
+    color: white;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+    padding-top: 30px;
+    padding-left: 30px;
+    
+    display: flex;
+    align-items: center;
+}
+
+.location-icon-white{
+    height: 1.5rem;
+    padding-right: 20px;
 }
 
 .place1{
@@ -287,7 +291,7 @@ b {
     object-fit: cover;
     width: 95%;
     height: 95%;
-    border-radius: 150px;
+    border-radius: 50px;
 }
 
 
@@ -299,7 +303,7 @@ b {
     object-fit: cover;
     width: 90%;
     height: 90%;
-    border-radius: 150px;
+    border-radius: 50px;
 }
 
 
@@ -311,7 +315,7 @@ b {
     object-fit: cover;
     width: 90%;
     height: 90%;
-    border-radius: 150px;
+    border-radius: 50px;
 }
 
 
