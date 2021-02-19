@@ -76,7 +76,7 @@ input:focus, textarea:focus, select:focus, input:after{
 .header-image{
 
     /* Image settings*/
-    background: url('assetsstructures.jpg');
+    background: url('assets/structures.jpg');
     background-position: center;
 
     padding: 0 0.25rem;
