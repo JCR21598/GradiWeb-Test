@@ -67,7 +67,7 @@ input:focus, textarea:focus, select:focus, input:after{
 .header-grid-container{
     grid-area: Header;
 
-    position: relative;hero
+    position: relative;
 
 }
 
@@ -76,7 +76,7 @@ input:focus, textarea:focus, select:focus, input:after{
 .header-image{
 
     /* Image settings*/
-    background: url('assets/structures.jpg');
+    background: url('assetsstructures.jpg');
     background-position: center;
 
     padding: 0 0.25rem;
