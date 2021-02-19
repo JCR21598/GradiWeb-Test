@@ -20,7 +20,7 @@ $( document ).ready(function() {
 
 function bogotaWeather(api_key, city_name){
 
-    var api_call = `http://api.openweathermap.org/data/2.5/weather?q=${city_name}&units=metric&appid=${api_key}`;
+    var api_call = `https://api.openweathermap.org/data/2.5/weather?q=${city_name}&units=metric&appid=${api_key}`;
     
     // Make API call and fill in elements
     $.getJSON(api_call, function(data) {
