@@ -1,5 +1,7 @@
 $( document ).ready(function() {
 
+    alert("hi")
+
     const api_key = "d29cf117a0fb58b32079849c93c64387";
 
     // Get Bogota's current weather and set to corresponding section
