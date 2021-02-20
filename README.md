@@ -16,4 +16,4 @@ Implementation and Personal Comments:
 
 This is the final result:
 
-https://raw.github.com/JCR21598/GradiWeb-Test/main/Final.PNG
+![ScreenShot](https://raw.github.com/JCR21598/GradiWeb-Test/main/Final.PNG)
