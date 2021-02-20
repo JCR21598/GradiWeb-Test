@@ -10,7 +10,7 @@ Aplicación y comentarios personales:
 
 - **HTML, CSS y JavaScript**: Utilizando métodos tradicionales, sin utilizar ningún tipo de librería.
 
-- **Diseño web responsivo**:  Implementado hasta cierto punto, no esta perfecto. No hubo tiempo suficiente para poder considerar todo tipo de pantallas. 
+- **Diseño web responsivo**: Implementado muy basicamente, no esta perfecto. 
 
 Este es el resultado final:
 
