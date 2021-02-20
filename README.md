@@ -1,19 +1,17 @@
-# GradiWeb-Test
-
 # Prueba GradiWeb
 
-Visit the website on: https://gradiweb-test.herokuapp.com
+Sitio Web: https://gradiweb-test.herokuapp.com
 
-Implementation and Personal Comments: 
+Aplicación y comentarios personales: 
 
-- **Browser**: Used Opera version 74 to be able to develop and test the application
+- **Navegador**: Opera version 75 fue usado para desarrollar y probar la aplicación.
 
-- **Heroku**: This was the first time implementing on a cloud platform. It was a challenge that took some time, however, I was able to overcome this difficult situation by effectively and efficiently learning about the tool
+- **Heroku**: Esta fue la primera vez que se implementó en una plataforma en la nube. Fue un reto que me llevó algo de tiempo, sin embargo, pude superar esta difícil situación aprendiendo de forma eficaz y eficiente sobre la herramienta.
 
-- **HTML, CSS and JavaScript**: Used traditional methods, without using any sort of library.
+- **HTML, CSS y JavaScript**: Utilizando métodos tradicionales, sin utilizar ningún tipo de librería.
 
-- **Responsive Web Design**: Implemented to some degree, for sure not perfect. Not sufficient time to be able to consider all type of displays. 
+- **Diseño web responsivo**:  Implementado hasta cierto punto, no esta perfecto. No hubo tiempo suficiente para poder considerar todo tipo de pantallas. 
 
-This is the final result:
+Este es el resultado final:
 
 ![ScreenShot](https://raw.github.com/JCR21598/GradiWeb-Test/main/Final.PNG)
