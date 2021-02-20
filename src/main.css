@@ -228,6 +228,47 @@ b {
     order:3;
 }
 
+.bogota-weather-icon{
+    grid-area: bogotaWeatherIcon;
+
+    justify-self: start;
+    align-self: center;
+
+}
+
+.bogota-day{
+    grid-area: bogotaDay ;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.7rem;
+
+    justify-self: center;
+    align-self: end;
+
+
+}
+
+.bogota-weather-info{
+    grid-area: bogotaWeatherInfo;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+
+    justify-self: center;
+    align-self: center;
+}
+
+.bogota-temp{
+    grid-area: bogotaTemps;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+
+    justify-self: center;
+    align-self: center;
+}
+
 /* Bogota Cards Content */
 
 .bogota-weather-icon{
