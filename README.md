@@ -8,7 +8,7 @@ Implementation and Personal Comments:
 
 - **Browser**: Used Opera version 74 to be able to develop and test the application
 
-- **Heroku**: This was the first time implementing any sort of server for a webpage. It was a challenge that took some time, however, I was able to overcome this difficult situation by effectively and efficiently learning about the tool
+- **Heroku**: This was the first time implementing on a cloud platform. It was a challenge that took some time, however, I was able to overcome this difficult situation by effectively and efficiently learning about the tool
 
 - **HTML, CSS and JavaScript**: Used traditional methods, without using any sort of library.
 
