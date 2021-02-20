@@ -49,7 +49,6 @@ input:focus, textarea:focus, select:focus, input:after{
 
 /* Entire body Grid wrapper */
 .grid-wrapper{
-
     background-color: #f9f9f9;
     display: grid;
     grid-template-areas: "  .    Header   .   "
@@ -75,8 +74,6 @@ input:focus, textarea:focus, select:focus, input:after{
 }
 
 .header-image{
-
-    /* Image settings*/
     background: url('assets/structures.jpg');
     background-position: center;
     background-size: 120%;
@@ -88,11 +85,16 @@ input:focus, textarea:focus, select:focus, input:after{
 }
 
 .header-block{
-    /* Position in Image-Header*/
     position: absolute;
     left: 10%; 
     top: 40%;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-location-bogota{
     display: flex;
 }
 
@@ -102,7 +104,6 @@ input:focus, textarea:focus, select:focus, input:after{
 }
 
 .h2-header-location{
-
     color: #786AE4;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -112,6 +113,7 @@ input:focus, textarea:focus, select:focus, input:after{
 .bogota-icon{
     height: 8rem;
     width: 8rem;
+    padding-top: 35px;
 }
 
 
@@ -144,9 +146,6 @@ input:focus, textarea:focus, select:focus, input:after{
     background-color: #7D68E9;
 
 }
-
-
-
 
 
 /*** Main Container Styling ***/
@@ -214,26 +213,28 @@ b {
 }
 
 .forecast-day1{
-    
     order: 1;
 }
 
 .forecast-day2{
-
     order: 2;
 }
 
 .forecast-day3{
-
     order:3;
 }
+
+
+/* Bogota Cards Content */
 
 .bogota-weather-icon{
     grid-area: bogotaWeatherIcon;
 
+    height: 90%;
+    width: auto;
+
     justify-self: start;
     align-self: center;
-
 }
 
 .bogota-day{
@@ -265,46 +266,44 @@ b {
     font-weight: bold;
     font-size: 2rem;
 
-    justify-self: center;
-    align-self: center;
-}
-
-/* Bogota Cards Content */
-
-.bogota-weather-icon{
-
-    border-radius: 75px 0 0 75px;
-
-    grid-area: bogotaWeatherIcon;
-}
-
-.bogota-day{
-
-    grid-area: bogotaDay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.bogota-weather-info{
-    
-    grid-area: bogotaWeatherInfo ;
+.bogota-forecast-day1{
+    grid-area: bogotaTemps;
 
-}
-
-.bogota-temps{
     background-color: #786AE4;
     border: 5px solid #786AE4;
     border-radius: 30px;
+    color: #ffffff;
 
-    grid-area: bogotaTemps;
+    height:100%;
+    width:100%;
 }
 
+.bogota-forecast-other{
+    grid-area: bogotaTemps;
 
+    background-color: #DCE8F4;
+    border: 5px solid #DCE8F4;
+    border-radius: 30px;
+    color: black;
+
+    height:100%;
+    width:100%;
+}
+
+.forecast-text{
+    font-size: 2.5rem;
+}
 
 
 /* Place to Visit Section/Styling */
 
 .place-to-visit-section{
-
     min-width: 0;
     min-height: 0;
 
@@ -312,7 +311,6 @@ b {
     width:100%;
 
     overflow: hidden;
-
 
     grid-area: PlaceToVisit; 
 
@@ -324,13 +322,9 @@ b {
     
     grid-template-columns: 50% 50%;
     grid-template-rows: 10% 30% 60%;    
-
-
-
 }
 
 .place-section-header{
-
     font-size: 2.8rem;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -403,7 +397,6 @@ b {
 }
 
 .btn-visit-places{
-
     outline:none;
     border: 5px solid #786AE4;
     background-color: #786AE4;
@@ -430,7 +423,6 @@ b {
 /* Other Forecast Section/Styling */
 
 .other-forecast-section{
-
     height:100%;
     width:100%;
 
@@ -476,5 +468,4 @@ b {
     width:90%;
     height:auto;
     padding: 20px
-
 }

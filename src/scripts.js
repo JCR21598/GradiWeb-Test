@@ -79,15 +79,21 @@ function bogotaForecast(api_key, lat, lon, exclude){
             var dayWeatherIconElem = document.createElement("img");
             var dayElem = document.createElement("div");
             var weatherInfoElem = document.createElement("div");
-            var tempElem = document.createElement("div");
-
-            console.log(dayWeatherIconElem);
+            var tempContainerElem = document.createElement("div");
+            var tempElem = document.createElement("p");
 
             // Set class attr for styling
             dayWeatherIconElem.setAttribute("class", "bogota-weather-icon");
             dayElem.setAttribute("class", "bogota-day");
             weatherInfoElem.setAttribute("class", "bogota-weather-info");
-            tempElem.setAttribute("class", "bogota-temp");
+            if(count == 0) {
+                tempContainerElem.setAttribute("class", "bogota-temp bogota-forecast-day1");
+            }
+            else{
+                tempContainerElem.setAttribute("class", "bogota-temp bogota-forecast-other");
+            }
+            tempElem.setAttribute("class", "forecast-text");
+            
 
             // Add values to newly created elements
             var respDay = document.createTextNode(dayName);
@@ -99,9 +105,10 @@ function bogotaForecast(api_key, lat, lon, exclude){
             dayElem.appendChild(respDay);
             weatherInfoElem.appendChild(respWeatherInfo);
             tempElem.appendChild(respTemp);
+            tempContainerElem.appendChild(tempElem)
 
             // Append created elements to parent div 
-            $(`.forecast-day${count + 1}`).append(dayWeatherIconElem, dayElem, weatherInfoElem, tempElem); 
+            $(`.forecast-day${count + 1}`).append(dayWeatherIconElem, dayElem, weatherInfoElem, tempContainerElem); 
           }
         
         
